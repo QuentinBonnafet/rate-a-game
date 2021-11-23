@@ -24,7 +24,7 @@ puts "Creating Games"
 file = URI.open('https://static.wikia.nocookie.net/assassinscreed/images/6/63/Assassins_Creed_II_cover01.jpg/revision/latest/scale-to-width-down/1000?cb=20150227231131&path-prefix=fr')
 anime = Game.create!(
   name: "Assassin's Creed 2",
-  score: "90"
+  score: "90",
   studio: "Ubisoft",
   plateform: "PlayStation 3",
   genre: "Action-Aventure",
@@ -36,7 +36,7 @@ anime.photo.attach(io: file, filename: 'ac2img.jpg', content_type: 'image/png')
 file = URI.open('https://howlongtobeat.com/games/38019_The_Legend_of_Zelda_Breath_of_the_Wild.jpg')
 anime = Game.create!(
   name: "Zelda Breath of the Wild",
-  score: "85"
+  score: "85",
   studio: "Nintendo",
   plateform: "Nintendo Wii U",
   genre: "Action-Aventure",
@@ -48,7 +48,7 @@ anime.photo.attach(io: file, filename: 'zbotwimg.jpg', content_type: 'image/png'
 file = URI.open('https://m.media-amazon.com/images/I/51kWyydz-QL._AC_.jpg')
 anime = Game.create!(
   name: "Super Mario Bros",
-  score: "92.5"
+  score: "92.5",
   studio: "Nintendo",
   plateform: "Nintendo Entertainment System",
   genre: "Plateformes",
@@ -60,7 +60,7 @@ anime.photo.attach(io: file, filename: 'smbimg.jpg', content_type: 'image/png')
 file = URI.open('https://www.mobygames.com/images/covers/l/9494-halo-combat-evolved-xbox-front-cover.jpg')
 anime = Game.create!(
   name: "Halo Combat Evolved",
-  score: "87"
+  score: "87",
   studio: "Microsoft Game Studios",
   plateform: "Xbox",
   genre: "Jeu de tir à la première personne",
