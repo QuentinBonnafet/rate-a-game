@@ -31,7 +31,7 @@ anime = Game.create!(
   year: "2009",
 )
 
-anime.photo.attach(io: file, filename: 'ac2img.jpg', content_type: 'image/png')
+# anime.photo.attach(io: file, filename: 'ac2img.jpg', content_type: 'image/png')
 # 2--------------------------------------------------------------------------------------------------------
 file = URI.open('https://howlongtobeat.com/games/38019_The_Legend_of_Zelda_Breath_of_the_Wild.jpg')
 anime = Game.create!(
@@ -43,7 +43,7 @@ anime = Game.create!(
   year: "2017",
 )
 
-anime.photo.attach(io: file, filename: 'zbotwimg.jpg', content_type: 'image/png')
+# anime.photo.attach(io: file, filename: 'zbotwimg.jpg', content_type: 'image/png')
 # 3--------------------------------------------------------------------------------------------------------
 file = URI.open('https://m.media-amazon.com/images/I/51kWyydz-QL._AC_.jpg')
 anime = Game.create!(
@@ -55,7 +55,7 @@ anime = Game.create!(
   year: "1985",
 )
 
-anime.photo.attach(io: file, filename: 'smbimg.jpg', content_type: 'image/png')
+# anime.photo.attach(io: file, filename: 'smbimg.jpg', content_type: 'image/png')
 # 4--------------------------------------------------------------------------------------------------------
 file = URI.open('https://www.mobygames.com/images/covers/l/9494-halo-combat-evolved-xbox-front-cover.jpg')
 anime = Game.create!(
@@ -67,7 +67,7 @@ anime = Game.create!(
   year: "2001",
 )
 
-anime.photo.attach(io: file, filename: 'hceimg.jpg', content_type: 'image/png')
+# anime.photo.attach(io: file, filename: 'hceimg.jpg', content_type: 'image/png')
 
 puts "---------------------"
 puts "Finished"
