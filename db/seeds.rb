@@ -15,7 +15,7 @@ Game.destroy_all
 
 puts "---------------------"
 puts "Creating Users"
-User.create!(email: "user@gmail.com", password: "password", nickname: "Quentin")
+User.create!(email: "user@gmail.com", password: "password", name: "Quentin")
 
 puts "---------------------"
 puts "Creating Games"
@@ -30,8 +30,8 @@ anime = Game.create!(
   genre: "Action-Aventure",
   year: "2009",
 )
-puts " - #{game.name} (#{game.count}/4)"
-anime.photo.attach(io: file, filename: 'ac2img.jpg', content_type: 'image/png')
+
+# anime.photo.attach(io: file, filename: 'ac2img.jpg', content_type: 'image/png')
 # 2--------------------------------------------------------------------------------------------------------
 file = URI.open('https://howlongtobeat.com/games/38019_The_Legend_of_Zelda_Breath_of_the_Wild.jpg')
 anime = Game.create!(
@@ -42,8 +42,8 @@ anime = Game.create!(
   genre: "Action-Aventure",
   year: "2017",
 )
-puts " - #{game.name} (#{game.count}/4)"
-anime.photo.attach(io: file, filename: 'zbotwimg.jpg', content_type: 'image/png')
+
+# anime.photo.attach(io: file, filename: 'zbotwimg.jpg', content_type: 'image/png')
 # 3--------------------------------------------------------------------------------------------------------
 file = URI.open('https://m.media-amazon.com/images/I/51kWyydz-QL._AC_.jpg')
 anime = Game.create!(
@@ -54,8 +54,8 @@ anime = Game.create!(
   genre: "Plateformes",
   year: "1985",
 )
-puts " - #{game.name} (#{game.count}/4)"
-anime.photo.attach(io: file, filename: 'smbimg.jpg', content_type: 'image/png')
+
+# anime.photo.attach(io: file, filename: 'smbimg.jpg', content_type: 'image/png')
 # 4--------------------------------------------------------------------------------------------------------
 file = URI.open('https://www.mobygames.com/images/covers/l/9494-halo-combat-evolved-xbox-front-cover.jpg')
 anime = Game.create!(
@@ -66,8 +66,8 @@ anime = Game.create!(
   genre: "Jeu de tir à la première personne",
   year: "2001",
 )
-puts " - #{game.name} (#{game.count}/4)"
-anime.photo.attach(io: file, filename: 'hceimg.jpg', content_type: 'image/png')
+
+# anime.photo.attach(io: file, filename: 'hceimg.jpg', content_type: 'image/png')
 
 puts "---------------------"
 puts "Finished"
